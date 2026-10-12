@@ -1,0 +1,31 @@
+class Routes {
+  static const splash = "/splash";
+  static const login = "/login";
+  static const onboarding = "/onboarding";
+  static const analayze = "/analayze";
+  static const menu = "/menu";
+  static const main = "/main";
+  static const configration = "/configration";
+  static const ph = "/ph";
+  static const phresult = "/ph-result";
+  static const quality = "/quality";
+  static const qualityresult = "/quality-result";
+  static const gcode = "/gcode";
+  static const stopwatch = "/stopwatch";
+  static const internet = "/internet";
+  static const history = "/history";
+  static const stream = "/stream";
+  static const selectfield = "/selectfield";
+  static const selectdevice = "/selectdevice";
+  static const camera = "/camera";
+  static const micro = "/micro";
+  static const waiting = "/waiting";
+  static const wifi = "/wifi";
+  static const data = "/data";
+  static const test = "/test";
+  static const direction = "/direction";
+  static const wificonnect = "/wificonnect";
+  static const observe = "/observe";
+  static const noInternet = "/noInternet";
+  static const phMenu = "/PhMenu";
+}

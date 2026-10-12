@@ -1,0 +1,37 @@
+wifi page descriptions
+On this page, there are two items, location and Wi-Fi,
+both of which must be activated to activate the next button and go to the next step.
+location item : 
+On Android 10 and above to get the user's Wi-Fi information including SSID 
+It is necessary to obtain permission to access the location from the user 
+We have used the permission package to access the user's location
+When the user is asked for permission to access the location, there are three modes:
+The user allows this application to access the location 
+The user allows access to the location only at this time 
+The user does not allow access to the location
+The first mode is the most favorable mode for us 
+When the user allows access to the app,
+there is no need to face this item to request access to the location in the future,
+and we will display this item until the user manually takes this access from us in the phone settings.
+We do not give So, when the user enters the page, we check the status of access to the location 
+and only if the access to the item is disabled, we display the item on the screen. This is the safest mode for us.
+In the second case, if the user allows access only in the present time,
+ every time she enters the page, she encounters this item and has to grant access again.
+If the user does not allow access to the location, he cannot go further because the next button will not be activated. 
+And if the user clicks on the item several times and denies access every time,
+after three times it will go to the permanently denied access mode and we have to direct him to the app settings on the phone.
+Therefore, for more security,
+it is better not to face this option when the user accepts the access permission,
+so that he does not want to deny the access permission in the future.
+Also, because we need permission to access the location to check the SS ID,
+the next item that is responsible for checking the SS ID will remain inactive until the user accepts this access.
+wifi item : 
+In this option, three modes should be considered 
+First, the user enters the page while not connected to Wi-Fi (the user's Wi-Fi is turned off)
+Second, the user enters the page while connected to another Wi-Fi 
+Third, the user enters the page while already connected to the Wi-Fi of the microscope
+In all modes
+The user clicks the button 
+Wait for it to connect to Wi-Fi
+We wait for it to exit from Wi-Fi settings 
+Then the Wi-Fi information is checked
